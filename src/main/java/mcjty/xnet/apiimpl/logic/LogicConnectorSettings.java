@@ -108,8 +108,9 @@ public class LogicConnectorSettings extends AbstractConnectorSettings {
 
         return TAGS.contains(tag);
     }
-
+    
     public int getSpeed() {
+        if (speed < 1) speed = 1;
         return speed;
     }
 
