@@ -57,6 +57,7 @@ public class FluidConnectorSettings extends AbstractConnectorSettings {
     }
 
     public int getSpeed() {
+        if (speed < 1) speed = 1;
         return speed;
     }
 
